@@ -74,7 +74,7 @@ def parse(string):
     return '-'.join(words)
 
 
-def english_to_pig_latin(s):
+def translate_to_pig_latin(s):
     i, j, res = 0, 0, []
     # two pointers
     while i < len(s):
@@ -97,6 +97,7 @@ def english_to_pig_latin(s):
 
 
 if __name__ == '__main__':
+    # tests
     # consecutive spaces, quotation mark
     print english_to_pig_latin("HeLLo World! I can't wait to explore your VAST forests. The-End!  ")
     print english_to_pig_latin("Hi  !  ") # when there are more than one spaces in between
